@@ -13,6 +13,12 @@ $(document).ready(function () {
       const response = await currencyService.getExchagneRate();
       getElements(response)
     })();
-    
+    function getElements(responseParam) {
+      if (responseParam) {
+        $("#output-section").append(responseParam.conversion_rates)
+      } else {
+        $("#output-section").text('In space, no one can hear your response');
+      }
+    }
   });
 });
