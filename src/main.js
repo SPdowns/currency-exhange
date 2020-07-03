@@ -7,16 +7,15 @@ import { CurrencyService } from './currency-service.js'
 $(document).ready(function () {
   $("form").submit(function() {
     event.preventDefault();
-    let country = $("#country-selector").val();
     (async () => {
       let currencyService = new CurrencyService();
       const response = await currencyService.getExchagneRate();
-      getElements(response, country)
+      getElements(response)
     })();
-    function getElements(responseParam, country) {
-      console.log(responseParam.conversion_rates, country)
+    function getElements(responseParam) {
+      console.log(responseParam.conversion_rates.AUD)
       if (responseParam.conversion_rates) {
-        $("#output-section").html("look" + responseParam.conversion_rates)
+        $("#output-section").html(`look ${responseParam.conversion_rates.AUD}`)
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
