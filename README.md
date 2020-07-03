@@ -1,9 +1,10 @@
-# Title
+# Currency Exchange
 
-#### Title, date 0000.00.00
+#### Currency Exchange, date 2020.07.03
 
 #### _By Sean Downs_
 ## Description
+This program will be able to exchange USD currency to multiple types of other currency with up-to-date exchange rates from
 
 ## Specifications
 **Behavior 1**: 
