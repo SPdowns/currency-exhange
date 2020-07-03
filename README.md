@@ -15,14 +15,12 @@ This program will be able to exchange USD currency to multiple types of other cu
   * Input: Country: Australia; Amount: 100
   * Output: USD 100 = AUD 144.42
 
-**Behavior 3**: 
-  * Input: 
-  * Output: 
-
 ## Known Bugs
-* No known bugs.   
+* Only 5 countries were able to calculate when I intended to have more inplace.   
 
 ## Setup/Installation Requirements
+To see live version, visit 
+
 To view live website, open your browser in chrome or firefox, DO NOT USE IE. In the addressbar - visit ...
 
 Open by downloading:
@@ -39,9 +37,11 @@ Open index.html in Chrome or preferred browser: open index.html
 * Visual Studio Code (code editor)
 * HTML
 * CSS
-* Bootstrap-3.3.7
+* Bootstrap-4.5.0
 * JavaScript
 * jQuery-3.5.1
+* Webpack 4.39.3
+* ExchangeCurrency API
 
 ## License
 This software is licensed under the MIT license. Copyright (c) 2020 **_Sean Downs_**

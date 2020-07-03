@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { CurrencyService } from './currency-service.js'
+import { CurrencyService } from './currency-service.js';
 //import { ExchangeFormula } from './exchange-formula.js'
 
 $(document).ready(function () {
@@ -14,23 +14,22 @@ $(document).ready(function () {
     (async () => {
       let currencyService = new CurrencyService();
       const response = await currencyService.getExchagneRate();
-      getElements(response, countryInput, amountInput)
+      getElements(response, countryInput, amountInput);
     })();
     
     function getElements(responseParam, countryInput, amountInput) {
-      console.log(responseParam, countryInput, amountInput)
       if (countryInput === "AUD") {
-        $("#output-section").text(responseParam.conversion_rates.AUD * amountInput)
+        $("#output-section").text(responseParam.conversion_rates.AUD * amountInput);
       } else if (countryInput === "GBP") {
-        $("#output-section").text(responseParam.conversion_rates.GBP * amountInput)
+        $("#output-section").text(responseParam.conversion_rates.GBP * amountInput);
       } else if (countryInput === "KRW") {
-        $("#output-section").text(responseParam.conversion_rates.KRW * amountInput)
+        $("#output-section").text(responseParam.conversion_rates.KRW * amountInput);
       } else if (countryInput === "MXN") {
-        $("#output-section").text(responseParam.conversion_rates.MXN * amountInput)
+        $("#output-section").text(responseParam.conversion_rates.MXN * amountInput);
       } else if (countryInput === "HKD") {
-        $("#output-section").text(responseParam.conversion_rates.GBP * amountInput)
+        $("#output-section").text(responseParam.conversion_rates.GBP * amountInput);
       } else {
-        $("#output-section").text("This ain gon work")
+        $("#output-section").text("That wasn't an expected input");
       }
     }
   });

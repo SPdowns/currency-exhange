@@ -1,0 +1,11 @@
+body {
+  background-image: url(./../assets/images/background-map.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#main-content {
+  background-color: rgba(100, 99, 99, 0.582);
+  height: 400px;
+}
