@@ -11,10 +11,10 @@ $(document).ready(function () {
     (async () => {
       let currencyService = new CurrencyService();
       const response = await currencyService.getExchagneRate();
-      getElements(response)
+      getElements(response, country)
     })();
-    function getElements(responseParam) {
-      console.log(responseParam.conversion_rates)
+    function getElements(responseParam, country) {
+      console.log(responseParam.conversion_rates, country)
       if (responseParam.conversion_rates) {
         $("#output-section").html("look" + responseParam.conversion_rates)
       } else {
