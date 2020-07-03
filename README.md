@@ -4,7 +4,7 @@
 
 #### _By Sean Downs_
 ## Description
-This program will be able to exchange USD currency to multiple types of other currency with up-to-date exchange rates from
+This program will be able to exchange USD currency to multiple types of other currency with up-to-date exchange rates from the exchangerate-api
 
 ## Specifications
 **Behavior 1**: 
