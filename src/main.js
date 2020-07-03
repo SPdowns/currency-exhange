@@ -14,8 +14,8 @@ $(document).ready(function () {
     })();
     function getElements(responseParam) {
       console.log(responseParam.conversion_rates.AUD)
-      if (responseParam.conversion_rates) {
-        $("#output-section").html(`look ${responseParam.conversion_rates.AUD}`)
+      if (responseParam) {
+        $("#output-section").text(`look ${responseParam.conversion_rates.($(#country-select))}`)
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
