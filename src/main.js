@@ -16,7 +16,7 @@ $(document).ready(function () {
       let arrayCountry = responseParam.conversion_rates
       if (responseParam) {
         $.each(arrayCountry, function(key, vaule) {
-          $("#output-section").append(key + " : " + vaule + ", " + `<br>`);
+          $("#output-section").append(key + " : " + vaule + `<br>`);
         });
       } else {
         $("#output-section").text('In space, no one can hear your response');
