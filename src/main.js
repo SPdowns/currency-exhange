@@ -13,9 +13,11 @@ $(document).ready(function () {
       getElements(response)
     })();
     function getElements(responseParam) {
-      console.log(responseParam)
+      let arrayCountry = responseParam.conversion_rates
       if (responseParam) {
-        $("#output-section").text(`look ${responseParam}`)
+        $.each(arrayCountry, function(key, vaule) {
+          $("#output-section").append(key + " : " + vaule + ", " + `<br>`);
+        });
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
