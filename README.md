@@ -7,10 +7,17 @@
 This program will be able to exchange USD currency to multiple types of other currency with up-to-date exchange rates from the exchangerate-api
 
 ## Specifications
-**Behavior 1**: 
+**Behavior 1**: The user will be able to select a currecy to be exchanged to the current USD rate
+  * Input: Austrailia
+  * Output: USD 1 = AUD 1.4442
+
+**Behavior 2**: The user will be able to change the USD number, displaying what that amount would be in country currency
+  * Input: Country: Australia; Amount: 100
+  * Output: USD 100 = AUD 144.42
+
+**Behavior 3**: 
   * Input: 
   * Output: 
-
 
 ## Known Bugs
 * No known bugs.   
