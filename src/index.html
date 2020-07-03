@@ -14,17 +14,18 @@
       <section id="main-content">
         <form>
           <label for="input-amount">Input Amount To Exchange</label>
-          <input type="text" id="input-amount">
+          <input type="text" id="input-amount" requiredq>
           <select id="input-country" >
-            <option value="AUD">Australia</option>
-            <option value="GBP">England</option>
-            <option value="KRW">South Korea</option>
-            <option value="MXN">Mexico</option>
-            <option value="HKD">Hong Kong</option>
+            <option value="Australia">Australia</option>
+            <option value="England">England</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Hong Kong">Hong Kong</option>
           </select>
           <button type="submit" class="btn btn-dark">Exchange</button>
         </form>
-        <p>You have <span id="usd-money"></span>, and when you convert it to <span id="user-country"></span> you'll have <span id="exchanged-currency"></span></p>
+        <br>
+        <p id="output-section">You have <span id="usd-money"></span> in USD<br> When converted to <span id="user-country"></span> monies, the amount will be <span id="exchanged-currency"></span></p>
       </section>
     </div>
   </body>

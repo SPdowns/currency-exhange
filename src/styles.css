@@ -5,6 +5,11 @@ body {
   background-repeat: no-repeat;
 }
 
+#output-section {
+  display: none;
+  text-align: center;
+}
+
 #main-content {
   background-color: rgba(100, 99, 99, 0.582);
   height: 400px;
