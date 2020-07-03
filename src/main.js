@@ -13,9 +13,11 @@ $(document).ready(function () {
       const response = await currencyService.getExchagneRate();
       getElements(response)
     })();
+    
     function getElements(responseParam) {
+      console.log(responseParam)
       if (responseParam) {
-        $("#output-section").append(responseParam.conversion_rates)
+        $("#output-section").append(responseParam.conversion_rates.clp)
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
