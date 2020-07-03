@@ -15,9 +15,9 @@ $(document).ready(function () {
     })();
     
     function getElements(responseParam) {
-      console.log(responseParam)
-      if (responseParam) {
-        $("#output-section").append(responseParam.conversion_rates.clp)
+      console.log(responseParam.conversion_rates.ARS)
+      if (responseParam.conversion_rates) {
+        $("#output-section").append(responseParam.conversion_rates.ARS)
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
