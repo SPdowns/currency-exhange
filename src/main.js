@@ -10,13 +10,13 @@ $(document).ready(function () {
     let country = $("#country-selector").val();
     (async () => {
       let currencyService = new CurrencyService();
-      const response = await currencyService.getExchagneRate(country);
+      const response = await currencyService.getExchagneRate();
       getElements(response)
     })();
     function getElements(responseParam) {
-      console.log(country, responseParam.conversion_rates.AUD)
+      console.log(responseParam.conversion_rates)
       if (responseParam.conversion_rates) {
-        $("#output-section").append(responseParam.conversion_rates)
+        $("#output-section").html("look" + responseParam.conversion_rates)
       } else {
         $("#output-section").text('In space, no one can hear your response');
       }
