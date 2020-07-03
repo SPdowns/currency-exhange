@@ -19,9 +19,7 @@ This program will be able to exchange USD currency to multiple types of other cu
 * Only 5 countries were able to calculate when I intended to have more inplace.   
 
 ## Setup/Installation Requirements
-To see live version, visit 
-
-To view live website, open your browser in chrome or firefox, DO NOT USE IE. In the addressbar - visit ...
+To view live website, open your browser in chrome or firefox, DO NOT USE IE. In the addressbar - visit https://spdowns.github.io/currency-exhange
 
 Open by downloading:
 

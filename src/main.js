@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     function getElements(responseParam, countryInput, amountInput) {
       if (countryInput === "AUD") {
-        $("#output-section").text(responseParam.conversion_rates.AUD * amountInput);
+        $("#exchanged-currency").text(responseParam.conversion_rates.AUD * amountInput);
       } else if (countryInput === "GBP") {
         $("#output-section").text(responseParam.conversion_rates.GBP * amountInput);
       } else if (countryInput === "KRW") {
