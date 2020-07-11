@@ -1,5 +1,5 @@
 export class CurrencyService {
-  async getExchagneRate() {
+  async getExchangeRate() {
     try {
       let response = await fetch (`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`);
       let jsonifiedResponse;
@@ -13,4 +13,5 @@ export class CurrencyService {
       return false;
     }
   }
+  
 }
