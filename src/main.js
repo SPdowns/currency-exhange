@@ -8,7 +8,7 @@ $(document).ready(function () {
   $("form").submit(function() {
     event.preventDefault();
     let countryInput = $("#input-country").val();
-    let countryFullName = $("#input-country").text();
+    let countryFullName = $("select option:selected").text();
     let amountInput = $("#input-amount").val();
     $("#output-section").show();
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
       } else {
         $("#usd-money").text(amountInput);
         $("#user-country").text(countryFullName);
-        $("#exchange-currency").text(responseParam.conversion_rates[`${countryInput}`] * amountInput)
+        $("#exchanged-currency").text(responseParam.conversion_rates[`${countryInput}`] * amountInput)
       }
     }
   });
