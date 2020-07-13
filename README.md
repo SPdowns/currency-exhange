@@ -21,15 +21,14 @@ This program will be able to exchange USD currency to multiple types of other cu
 ## Setup/Installation Requirements
 To view live website, open your browser in chrome or firefox, DO NOT USE IE. In the addressbar - visit https://spdowns.github.io/currency-exhange
 
-Open by downloading:
-
-Download this repository onto your computer by clicking the 'clone or download button'
-Double click index.html to open it in your web browser
-Open via Bash/GitBash:
-
-Clone this repository onto your computer:
-Navigate into the week4pizza directory in Visual Studio Code or preferred text editor code .
-Open index.html in Chrome or preferred browser: open index.html
+Build Instructions:
+In your browser - navigate to https://github.com/SPdowns/currency-exhange and download zip
+## Or
+In your coding terminal with git - type `git clone https://github.com/SPdowns/currency-exhange`
+In your coding terminal, navigate to the cloned folder currency-exchange root folder
+Type into the terminal `npm install`
+After all dependencies have finsiehd, type into thwe terminal `npm run build`
+To view the page live in the brower, type into the terminal `npm start`
 
 ## Technologies Used
 * Visual Studio Code (code editor)
@@ -40,6 +39,8 @@ Open index.html in Chrome or preferred browser: open index.html
 * jQuery-3.5.1
 * Webpack 4.39.3
 * ExchangeCurrency API
+* Git
+* Node
 
 ## License
 This software is licensed under the MIT license. Copyright (c) 2020 **_Sean Downs_**
