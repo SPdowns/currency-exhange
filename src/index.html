@@ -11,10 +11,11 @@
       <section class="jumbotron">
         <h1>Currency Exchange</h1>
       </section>
-      <section id="main-content">
+      <section id="main-content" class="area-content">
         <form>
-          <label for="input-amount">Input Amount To Exchange</label>
-          <input type="text" id="input-amount" required>
+          <p>Enter in Amount to Convert</p>
+          <input type="text" id="input-amount" placeholder="amount" required><br>
+          <br><p>Select Country</p>
           <select id="input-country">
             <option value="AED">United Arab Emirates</option>
             <option value="ARS">Argentina</option>
@@ -66,7 +67,7 @@
             <option value="UAH">Ukraine</option>
             <option value="UYU">Uruguay</option>
             <option value="ZAR">South Africa</option>
-          </select>
+          </select><br>
           <button type="submit" class="btn btn-dark">Exchange</button>
         </form>
         <br>

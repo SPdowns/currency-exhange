@@ -19,12 +19,13 @@ $(document).ready(function () {
     })();
     
     function getElements(responseParam, countryInput, amountInput, countryFullName) {
+      let roundedInput = (responseParam.conversion_rates[`${countryInput}`] * amountInput).toFixed(2)
       if (responseParam === false) {
         $("#output-section").text("That wasn't an expected input");
       } else {
         $("#usd-money").text(amountInput);
         $("#user-country").text(countryFullName);
-        $("#exchanged-currency").text(responseParam.conversion_rates[`${countryInput}`] * amountInput)
+        $("#exchanged-currency").text(roundedInput)
       }
     }
   });
